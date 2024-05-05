@@ -1,0 +1,293 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* header */
+.nav-background{
+   background-color: rgba(16, 15, 15, 0.94);
+}
+.website-logo{
+    height: 60px;
+}
+.toggler{
+    color: white;
+}
+.header-text{
+    color: white;
+}
+.nav-item{
+    color: white;
+}
+
+/* landing */
+.landing-heading{
+    color: transparent;
+    background: none;
+}
+
+.landing-heading:hover{
+    color: white;
+}
+
+.landing-main{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(0, 0, 0);
+  justify-content: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  
+}
+
+.royal-stay{
+    width: 50%;
+    background-image: url("./public/royalStayHome.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    text-decoration: none;
+    font-size: 54px;
+    text-align: center;
+    font-family:Lobster ;
+}
+.royal-stay:hover{
+    background-image: url("./public/hoverRoyalStay.jpg");
+    color: white;
+}
+
+.royal-ican{
+    width:50% ;
+    background-image: url("./public/royalIcanfront.jpeg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    text-decoration: none;
+    text-align: center;
+    font-size: 54px;
+    font-family:Lobster ;
+}
+
+.royal-ican:hover{
+    background-image: url("./public/hoverroyalIcan.jpg");
+    color: white;
+}
+
+
+@media screen and (max-width:768px){
+    .landing-main{
+        display: flex;
+        flex-direction: column;
+    
+      
+        
+      }
+      .royal-stay{
+        width: 100%;
+       height: 50vh;
+    }
+    .royal-ican{
+        width: 100%;
+        height: 50vh;
+    }
+
+}
+
+  /* footer */
+  .footer-section {
+    background-color: #644e16;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+.footer-text{
+  margin-top: 20px;
+}
+
+  .footer-email {
+    font-size: 16px; /* Adjust font size */
+    margin-bottom: 10px;
+  }
+
+ 
+
+
+  @media (max-width: 768px) {
+    .footer-section {
+      padding: 20px;
+    }
+    .address {
+      line-height: 1.5; /* Easier to read on smaller screens */
+    }
+  }
+  .icon{
+    color: #644e16;
+    size: 25px;
+    margin-right: 15px;
+  }
+
+  .page-logo{
+    height: 70px;
+    margin-right: 20px;
+  }
+  .nav-button{
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: white;
+    margin-right: 20px;
+  }
+  .nav-link-item{
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    
+  }
+
+  .royalstay-container{
+    padding: 30px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sub-container{
+    background-color: rgba(121, 89, 89, 0.292);
+    padding: 10px;
+  }
+  .hotel-name{
+     color: white;
+     font-family: lobster;
+  }
+  .sub-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+  }
+  .home-hotel{
+    width: 40%;
+    height: 100%;
+  }
+
+  .royal-stay-explore{
+    background-color: rgba(0, 0, 0, 0.385);
+  }
+
+  .hotel-text{
+    font-family: roboto;
+    color: white;
+  }
+
+  .home-button{
+    background-image: linear-gradient(to right,rgb(18, 16, 16),rgb(93, 66, 16));
+    border-radius: 8px;
+    font-family: roboto;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    border: none;
+    padding-bottom: 10px;
+
+  }
+
+   /* Contact us */
+   .contact-us-section {
+    padding: 40px 20px;
+    background-color:black;
+  }
+  .contact-form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  .contact-input{
+    background: none;
+    border: 1px solid wheat;
+    padding: 6px;
+    border-radius: 8px;
+    color: #ddd;
+    margin-bottom: 20px;
+
+  }
+.submit-button{
+  align-self: center;
+  padding: 8px;
+    border-radius: 4px;
+    border: none;
+    background-image:linear-gradient(rgb(118, 102, 22),rgb(47, 43, 13));
+    color: rgb(230, 230, 232);
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: "roboto";
+    transition: background-color 0.3s;
+
+}
+.message-input{
+  height: 100px;
+}
+
+.social-handle-container{
+ display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+
+}
+.social-icons{
+  font-size: 35px;
+  color: #765c1b;
+}
+
+@media screen and (min-width:768px){
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .contact-form{
+    width: 40%;
+  }
+  .social-handle-container{
+   width: 40%;
+   
+   }
+
+}
+
+.sub-title{
+  font-family: "Roboto";
+  font-size: 30px;
+  margin-left: 20px;
+  align-self: flex-start;
+  font-family: lobster;
+  font-size: 34px;
+  color: rgb(243, 242, 239);
+}
+.explore{
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width:768px){
+  .home-hotel{
+    height: 300px;
+  }
+ 
+}
